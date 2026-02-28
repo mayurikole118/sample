@@ -7,19 +7,16 @@ export const styles = StyleSheet.create({
     flexWrap: "wrap",
     justifyContent: "space-between",
   },
-
   gridItem: {
-    flex: 1,
-    margin: 8,
+    width: "48%",
+    marginBottom: 12,
   },
-
   gridCard: {
     height: 130,
     borderRadius: 20,
     padding: 15,
     justifyContent: "space-between",
   },
-
   gridText: {
     color: "white",
     fontWeight: "bold",

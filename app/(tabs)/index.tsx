@@ -14,8 +14,7 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { styles } from "../styles/Index.styles";
-import { styles as gridStyles } from "../../styles/gridStyles";
-
+import { styles as gridStyles } from "../styles/gridStyles";
 export default function Index() {
   const router = useRouter();
   const { width } = Dimensions.get("window");
@@ -395,7 +394,7 @@ export default function Index() {
                         <>
                           <Pressable
                             style={sidebarStyles.subMenuItem}
-                            onPress={() => router.push("/attendance-mark")}
+                            onPress={() => router.push("/attendance/dashboard")}
                           >
                             <Text style={sidebarStyles.subMenuText}>
                               Dashboard
@@ -404,7 +403,9 @@ export default function Index() {
 
                           <Pressable
                             style={sidebarStyles.subMenuItem}
-                            onPress={() => router.push("/attendance-report")}
+                            onPress={() =>
+                              router.push("/attendance/quick-class")
+                            }
                           >
                             <Text style={sidebarStyles.subMenuText}>
                               Quick Class
@@ -413,7 +414,9 @@ export default function Index() {
 
                           <Pressable
                             style={sidebarStyles.subMenuItem}
-                            onPress={() => router.push("/attendance-report")}
+                            onPress={() =>
+                              router.push("/attendance/calender-view")
+                            }
                           >
                             <Text style={sidebarStyles.subMenuText}>
                               Calender view
@@ -422,7 +425,9 @@ export default function Index() {
 
                           <Pressable
                             style={sidebarStyles.subMenuItem}
-                            onPress={() => router.push("/attendance-report")}
+                            onPress={() =>
+                              router.push("/attendance/time-table")
+                            }
                           >
                             <Text style={sidebarStyles.subMenuText}>
                               Time table

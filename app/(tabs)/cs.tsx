@@ -180,8 +180,6 @@ const styles = StyleSheet.create({
     height: 50,
     justifyContent: "center",
     alignItems: "center",
-    borderBottomWidth: 0,
-    borderColor: "#eee",
     marginTop: 20,
   },
 
