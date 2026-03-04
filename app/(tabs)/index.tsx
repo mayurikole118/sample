@@ -440,6 +440,37 @@ export default function Index() {
                 </View>
               );
             })}
+
+            {/* BOTTOM SECTION */}
+            <View style={{ marginTop: 40 }}>
+              <Pressable
+                style={sidebarStyles.menuItem}
+                onPress={() => {
+                  closeSidebar();
+                  router.push("/profile");
+                }}
+              >
+                <View style={sidebarStyles.menuRow}>
+                  <Ionicons name="person-outline" size={20} color="#374151" />
+                  <Text style={sidebarStyles.menuText}>Profile</Text>
+                </View>
+              </Pressable>
+
+              <Pressable
+                style={[sidebarStyles.menuItem, { marginTop: 10 }]}
+                onPress={() => {
+                  closeSidebar();
+                  console.log("Logout pressed");
+                }}
+              >
+                <View style={sidebarStyles.menuRow}>
+                  <Ionicons name="log-out-outline" size={20} color="#ef4444" />
+                  <Text style={[sidebarStyles.menuText, { color: "#ef4444" }]}>
+                    Logout
+                  </Text>
+                </View>
+              </Pressable>
+            </View>
           </ScrollView>
         </SafeAreaView>
       </Animated.View>
