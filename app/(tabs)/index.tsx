@@ -13,8 +13,8 @@ import {
   StyleSheet,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { styles } from "../styles/Index.styles";
-import { styles as gridStyles } from "../styles/gridStyles";
+import styles from "../../styles/Index.styles";
+import gridStyles from "../../styles/gridStyles";
 export default function Index() {
   const router = useRouter();
   const { width } = Dimensions.get("window");
